@@ -368,6 +368,13 @@ body {
   height: 45px;
 }
 
+.product {
+  padding-bottom: 144px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #ffffff), color-stop(50%, #F5F6FA));
+  background: -o-linear-gradient(top, #ffffff 50%, #F5F6FA 50%);
+  background: linear-gradient(to bottom, #ffffff 50%, #F5F6FA 50%);
+}
+
 .product__block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -416,6 +423,92 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.serve {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #F5F6FA), color-stop(50%, #ffffff));
+  background: -o-linear-gradient(top, #F5F6FA 50%, #ffffff 50%);
+  background: linear-gradient(to bottom, #F5F6FA 50%, #ffffff 50%);
+}
+
+.serve__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.serve__column h2 {
+  margin-bottom: 10px;
+}
+
+.serve__description {
+  margin-bottom: 45px;
+}
+
+.serve__clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.serve__clients img {
+  width: 70px;
+  height: 70px;
+}
+
+.serve__buyers,
+.serve__seller {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 540px;
+  padding: 40px 88px;
+  border-radius: 10px;
+}
+
+.serve__buyers p,
+.serve__seller p {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.serve__buyers {
+  background-color: #F78434;
+  color: #FFFFFF;
+}
+
+.serve__buyers a {
+  background-color: #FFFFFF;
+  color: #F78434;
+}
+
+.serve__buyers a:hover {
+  background-color: #323232;
+  color: #FFFFFF;
+}
+
+.serve__seller {
+  -webkit-box-shadow: 0px 40px 52px -22px rgba(253, 178, 178, 0.08);
+          box-shadow: 0px 40px 52px -22px rgba(253, 178, 178, 0.08);
+  background: #FFFFFF;
 }
 @supports (-webkit-appearance:none){
 .button--white::before{background-image:url("../img/play.svg")}
