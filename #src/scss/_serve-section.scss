@@ -1,5 +1,6 @@
 .serve {
     background: linear-gradient(to bottom, #F5F6FA 50%, #ffffff 50%);
+    margin-bottom: 113px;
     &__column {
         display: flex;
         flex-direction: column;
@@ -27,12 +28,15 @@
         width: 540px;
         padding: 40px 88px;
         border-radius: 10px;
+        box-shadow: 0px 40px 52px -22px rgba(253, 178, 178, 0.08);
+        background: #FFFFFF;
+        transition: all 0.2s ease-in-out;
         p {
             text-align: center;
             margin-bottom: 25px;
         }
     }
-    &__buyers {
+    &__buyers:hover, &__seller:hover {
         background-color: $orange;
         color: #FFFFFF;
         a {
@@ -43,9 +47,10 @@
                 color: #FFFFFF;
             }
         }
-    }
-    &__seller {
-        box-shadow: 0px 40px 52px -22px rgba(253, 178, 178, 0.08);
-        background: #FFFFFF;
+        svg {
+            path {
+                fill: #ffffff;
+            }
+        }
     }
 }

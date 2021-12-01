@@ -429,6 +429,7 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #F5F6FA), color-stop(50%, #ffffff));
   background: -o-linear-gradient(top, #F5F6FA 50%, #ffffff 50%);
   background: linear-gradient(to bottom, #F5F6FA 50%, #ffffff 50%);
+  margin-bottom: 113px;
 }
 
 .serve__column {
@@ -482,6 +483,12 @@ body {
   width: 540px;
   padding: 40px 88px;
   border-radius: 10px;
+  -webkit-box-shadow: 0px 40px 52px -22px rgba(253, 178, 178, 0.08);
+          box-shadow: 0px 40px 52px -22px rgba(253, 178, 178, 0.08);
+  background: #FFFFFF;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .serve__buyers p,
@@ -490,25 +497,78 @@ body {
   margin-bottom: 25px;
 }
 
-.serve__buyers {
+.serve__buyers:hover,
+.serve__seller:hover {
   background-color: #F78434;
   color: #FFFFFF;
 }
 
-.serve__buyers a {
+.serve__buyers:hover a,
+.serve__seller:hover a {
   background-color: #FFFFFF;
   color: #F78434;
 }
 
-.serve__buyers a:hover {
+.serve__buyers:hover a:hover,
+.serve__seller:hover a:hover {
   background-color: #323232;
   color: #FFFFFF;
 }
 
-.serve__seller {
-  -webkit-box-shadow: 0px 40px 52px -22px rgba(253, 178, 178, 0.08);
-          box-shadow: 0px 40px 52px -22px rgba(253, 178, 178, 0.08);
-  background: #FFFFFF;
+.serve__buyers:hover svg path,
+.serve__seller:hover svg path {
+  fill: #ffffff;
+}
+
+.benefits__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.benefits__content h3 {
+  margin-bottom: 58px;
+}
+
+.benefits__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.benefits__item {
+  width: 248px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.benefits__item p {
+  text-align: center;
+}
+
+.benefits img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 15px;
 }
 @supports (-webkit-appearance:none){
 .button--white::before{background-image:url("../img/play.svg")}
