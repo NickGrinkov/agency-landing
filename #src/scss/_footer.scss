@@ -1,0 +1,59 @@
+.footer {
+    padding: 0 164px 116px 160px;
+    &__row {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left {
+        width: 306px;
+        justify-content: flex-start;
+        p {
+            margin-bottom: 40px;
+        }
+    }
+    &__logo {
+        display: flex;
+        align-items: center;
+        margin-bottom: 18px;
+        &-svg {
+            width: 30px;
+            height: 30px;
+            margin-right: 15px;
+        }
+        span {
+            font-size: 24px;
+            font-weight: 700;
+        }
+    }
+    .socials {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 184px;
+        .youtube {
+            width: 28px;
+        }
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+    &__right {
+        display: flex;
+        justify-content: space-between;
+        width: 587px;
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        h4 {
+            margin-bottom: 18px;
+        }
+        p {
+            font-size: 14px;
+            line-height: 27px;
+            margin-bottom: 13px;
+        }
+    }
+}
